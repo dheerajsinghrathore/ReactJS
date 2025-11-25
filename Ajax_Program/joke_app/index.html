@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX Program</title>
+    <script>
+      function loadContent() {
+        var xhr = new XMLHttpRequest();
+        xhr.open(
+          "GET",
+          "https://official-joke-api.appspot.com/random_joke",
+          true
+        );
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("content").innerHTML = xhr.responseText;
+          }
+        };
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>AJAX Content Loader</h1>
+    <button onclick="loadContent()">Load Content</button>
+    <div
+      id="content"
+      style="margin-top: 20px; border: 1px solid #000; padding: 10px"
+    >
+      Content will be loaded here.
+    </div>
+    <button id="get-joke-btn">Get Joke</button>
+  </body>
+</html>
