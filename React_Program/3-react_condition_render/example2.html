@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Condition Render</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function getRandomNumber() {
+        let arr = [3, 5, 7, 9, 11, 13, 15, 12, 32];
+        let num = arr[Math.floor(Math.random() * arr.length)];
+        return num;
+      }
+
+      function MyApp() {
+        let number = getRandomNumber();
+        let divToRender = (
+          <div>
+            <h1>Random Number: {number}</h1>
+            {number % 2 === 0 ? (
+              <h2>The number is Even</h2>
+            ) : (
+              <h2>The number is Odd</h2>
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MyApp />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
