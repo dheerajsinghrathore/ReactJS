@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example</title>
+		<script>
+			class Emp {
+				constructor(ename, salary) {
+					this.ename = ename;
+					this.salary = salary;
+				}
+				display() {
+					console.log(`name:${this.ename},salary:${this.salary}`);
+				}
+			}
+			let e1 = new Emp("Amit", 100000.0);
+			e1.display();
+			let e2 = new Emp("Sumit", 200000.0);
+			e2.display();
+		</script>
+	</head>
+	<body></body>
+</html>

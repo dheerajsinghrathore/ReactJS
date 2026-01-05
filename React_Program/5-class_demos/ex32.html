@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example</title>
+		<script>
+			class Account {
+				#balance;
+				constructor(name, balance) {
+					this.name = name;
+					this.#balance = balance;
+				}
+				getBalance() {
+					return this.#balance;
+				}
+			}
+			let acct = new Account("Ravi", 50000.0);
+			document.write(`${acct.name},${acct.getBalance()}`);
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spread Operator</title>
+		<script>
+			let person1 = { age: 23, name: "Amit" };
+			let person2 = { ...person1 }; // Deep copy
+			person1.age = 30;
+			document.write(`${person1 === person2}<br>`);
+			document.write(`${person1.age},${person1.name}<br>`);
+			document.write(`${person2.age},${person2.name}<br>`);
+		</script>
+	</head>
+	<body></body>
+</html>

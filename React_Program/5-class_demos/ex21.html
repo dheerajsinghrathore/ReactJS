@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example</title>
+		<script>
+			class Vehicle {
+				constructor() {
+					document.write("Vehicle created<br>");
+				}
+				accelerate() {
+					document.write("accelerating<br>");
+				}
+			}
+			class Car extends Vehicle {
+				constructor() {
+					super(); //This is compulsory
+					document.write("Car created<br>");
+					this.color = "blue";
+				}
+				reverse() {
+					document.write("reversing<br>");
+				}
+				display() {
+					document.write(`Color of the car is ${this.color}`);
+				}
+			}
+			let audi = new Car();
+			audi.accelerate();
+			audi.reverse();
+			audi.display();
+		</script>
+	</head>
+	<body></body>
+</html>

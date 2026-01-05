@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spread Operator</title>
+		<script>
+			let arr = [10, 20, 30];
+			let brr = [...arr]; // deep copy
+			document.write(`${arr === brr}<br>`); //false
+			arr.push(40);
+			document.write(`arr is ${arr}<br>`); //10,20,30,40
+
+			document.write(`brr is ${brr}<br>`); //10,20,30
+		</script>
+	</head>
+	<body></body>
+</html>

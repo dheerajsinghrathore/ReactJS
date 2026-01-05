@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example</title>
+		<script>
+			class Emp {
+				constructor(ename, salary) {
+					this.ename = ename;
+					this.salary = salary;
+				}
+				toString() {
+					return `${this.ename},${this.salary}<br>`;
+				}
+			}
+			let e1 = new Emp("Amit", 100000.0);
+			let e2 = new Emp("Sumit", 200000.0);
+			document.write(e1);
+			document.write("<br>");
+			document.write(e2);
+		</script>
+	</head>
+	<body></body>
+</html>

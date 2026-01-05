@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Destructuring</title>
+    <script>
+      function calculate(a, b) {
+        let sum = a + b;
+        let diff = a - b;
+        let mult = a * b;
+        return [sum, diff, mult];
+      }
+      let [x, y, z] = calculate(10, 20);
+      document.write(`sum:${x},diff:${y},mult:${z}`);
+    </script>
+  </head>
+  <body></body>
+</html>

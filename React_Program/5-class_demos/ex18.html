@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example</title>
+		<script>
+			class Vehicle {
+				constructor() {
+					document.write("Vehicle created<br>");
+				}
+				accelerate() {
+					document.write("accelerating<br>");
+				}
+			}
+			class Car extends Vehicle {
+				constructor() {
+					document.write("Car created<br>");
+					super();
+				}
+				reverse() {
+					document.write("reversing<br>");
+				}
+			}
+			let audi = new Car();
+			audi.accelerate();
+			audi.reverse();
+		</script>
+	</head>
+	<body></body>
+</html>

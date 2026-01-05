@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rest Operator</title>
+		<script>
+			function add(...args) {
+				let sum = 0;
+				args.forEach((x) => {
+					document.write(`${x}<br>`);
+					sum = sum + x;
+				});
+				document.write(`Sum is ${sum}<br>`);
+			}
+
+			add(10, 20);
+			add(10, 20, 30);
+			add(10, 20, 30, 40);
+		</script>
+	</head>
+	<body></body>
+</html>

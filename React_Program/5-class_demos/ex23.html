@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example</title>
+		<script>
+			class Emp {
+				constructor(ename, sal) {
+					this.ename = ename;
+					this.sal = sal;
+				}
+				toString() {
+					return `${this.ename},${this.sal}<br>`;
+				}
+			}
+			class Manager extends Emp {}
+			let boss = new Manager("Amit", 50000.0);
+			document.write(boss);
+		</script>
+	</head>
+	<body></body>
+</html>

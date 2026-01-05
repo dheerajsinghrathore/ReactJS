@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spread Operator</title>
+		<script>
+			let person1 = {
+				age: 23,
+				name: "Amit",
+				address: { city: "Bhopal", pin: 462016 },
+			};
+			let person2 = { ...person1 }; // Deep copy
+			person1.address.city = "Indore";
+			document.write(`${person1 === person2}<br>`);
+			document.write(
+				`${person1.age},${person1.name},${person1.address.city}<br>`
+			);
+			document.write(
+				`${person2.age},${person2.name},${person2.address.city}<br>`
+			);
+		</script>
+	</head>
+	<body></body>
+</html>
